@@ -1,0 +1,27 @@
+{
+    "name": "ravialdo/demo-package",
+    "description": "Package demo",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ravialdo Imanda Putra",
+            "email": "ravialdo@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+             "psr-4": {
+                   "App\\": "app/",
+                   "Ravialdo\\DemoPackage\\": "src"
+             }
+    },
+    "extra": {
+         "laravel": {
+                "providers": [
+                       "Ravialdo\\DemoPackage\\Providers\\DemoPackageServiceProvider"
+                 ]
+         }
+     }
+}
